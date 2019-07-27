@@ -1,0 +1,20 @@
+.placeholder-container {
+  @apply h-screen flex flex-col justify-center;
+
+  .container-body {
+    @apply flex-1;
+  }
+
+  .container-footer {
+    @apply flex justify-center items-center border-t border-gray-300;
+    min-height: 80px;
+
+    .button {
+      @apply mx-3;
+    }
+  }
+}
+
+.content-body {
+  @apply p-6;
+}

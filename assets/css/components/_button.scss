@@ -1,0 +1,55 @@
+.button {
+  @apply  inline-flex
+          items-center
+          justify-center
+          px-3
+          rounded
+          uppercase
+          text-primary
+          font-semibold;
+
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+  outline: none !important;
+
+  &:hover {
+    @apply bg-primary-10;
+  }
+
+  &:active {
+    @apply bg-primary-20;
+  }
+
+  &.is-outlined {
+    @apply border border-primary;
+  }
+
+  &.is-danger {
+    @apply text-danger;
+
+    &:hover {
+      @apply bg-danger-10;
+    }
+
+    &:active {
+      @apply bg-danger-20;
+    }
+  }
+
+  &.is-success {
+    @apply text-success;
+
+    &:hover {
+      @apply bg-success-10;
+    }
+
+    &:active {
+      @apply bg-success-20;
+    }
+  }
+
+  &.is-xl {
+    @apply px-6 text-xl;
+    height: 50px;
+  }
+}

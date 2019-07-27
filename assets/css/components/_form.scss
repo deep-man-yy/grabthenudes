@@ -1,0 +1,21 @@
+.field {
+  @apply mb-4;
+
+  .field-help {
+    @apply block text-xs text-gray-600;
+  }
+}
+
+.label {
+  @apply block font-bold mb-1;
+}
+
+.input {
+  @apply border border-gray-400 rounded py-1 px-3 w-full text-gray-700;
+  outline: none !important;
+  transition: all .2s ease-in-out;
+
+  &:hover, &:focus {
+    @apply border-gray-600 text-black;
+  }
+}

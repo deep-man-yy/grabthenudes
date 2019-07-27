@@ -1,0 +1,22 @@
+.section {
+  &:not(:last-child) {
+    @apply mb-6;
+  }
+
+  &.box {
+    @apply bg-white
+      shadow
+      border
+      border-gray-300
+      p-4
+      rounded;
+  }
+
+  .section-header {
+    @apply mb-3;
+  }
+
+  .section-header-title {
+    @apply font-bold text-lg;
+  }
+}

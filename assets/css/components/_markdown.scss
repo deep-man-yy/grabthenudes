@@ -1,0 +1,41 @@
+.markdown-content {
+  h2 {
+    @apply text-xl mb-2 font-semibold;
+
+    &:not(:first-child) {
+      @apply mt-6;
+    }
+  }
+
+  h3 {
+    @apply text-lg mb-2;
+
+    &:not(:first-child) {
+      @apply mt-5;
+    }
+  }
+
+  p {
+    @apply my-2;
+  }
+
+  ul {
+    @apply list-disc ml-6;
+
+    li {
+      @apply mt-1;
+    }
+  }
+
+  a {
+    @apply text-primary;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+
+  code {
+    @apply bg-gray-200 font-mono py-1 px-2 text-sm;
+  }
+}

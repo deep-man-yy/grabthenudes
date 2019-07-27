@@ -1,0 +1,74 @@
+{
+  "plugins": ["lodash", "vue", "prettier"],
+  "extends": [
+    "@nuxtjs",
+    "plugin:nuxt/recommended",
+    "plugin:lodash/recommended",
+    "plugin:vue/recommended",
+    "airbnb-base",
+    "prettier"
+  ],
+  "env": {
+    "shared-node-browser": true,
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+    "global-require": "off",
+    "import/no-unresolved": "off",
+    "padded-blocks": ["error", "never"],
+    "no-await-in-loop": "warn",
+    "no-console": "off",
+    "no-alert": "off",
+    "no-continue": "off",
+    "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
+    "no-useless-constructor": "warn",
+    "no-underscore-dangle": "off",
+    "no-shadow": "off",
+    "no-unused-vars": "warn",
+    "no-debugger": "warn",
+    "no-restricted-globals": "warn",
+    "no-unreachable": "warn",
+    "object-shorthand": ["error", "always"],
+    "quote-props": ["error", "as-needed"],
+    "spaced-comment": "warn",
+    "import/no-webpack-loader-syntax": "warn",
+    "vue/no-v-html": "off",
+    "vue/html-indent": ["warn", 2],
+    "vue/html-self-closing": "off",
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/html-closing-bracket-newline": [
+      "warn",
+      {
+        "singleline": "never",
+        "multiline": "never"
+      }
+    ],
+    "lodash/import-scope": ["warn", "full"],
+    "lodash/prefer-lodash-method": "off",
+    "lodash/prefer-immutable-method": "warn",
+    "lodash/prefer-noop": "off",
+    "lodash/prefer-includes": "warn",
+    "lodash/prefer-lodash-typecheck": "warn",
+    "lodash/prefer-constant": "off",
+    "import/order": "warn",
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "nuxt/no-globals-in-created": "off"
+  },
+  "globals": {}
+}
